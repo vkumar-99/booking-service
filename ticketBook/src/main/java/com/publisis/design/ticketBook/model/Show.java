@@ -23,4 +23,15 @@ public class Show {
     private Movie movie;
     @ManyToOne
     private Theater theater;
+    
+	public Show(Date showDate, Time startTime, Time endTime, Movie movie, Theater theater) {
+		super();
+		this.showDate = showDate;
+		this.startTime = startTime;
+		this.endTime = endTime;
+		this.movie = movie;
+		this.theater = theater;
+	}
+    
+    
 }

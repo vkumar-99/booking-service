@@ -8,11 +8,15 @@ import java.util.List;
 @Data
 @Entity
 public class Location {
-
-    @Id
+	
+	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String city;
     @OneToMany
     private List<Theater> theaters;
+    
+    public Location(String city) {
+		this.city = city;
+	}
 }

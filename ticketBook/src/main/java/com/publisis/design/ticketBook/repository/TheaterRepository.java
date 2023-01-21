@@ -10,4 +10,6 @@ import java.util.List;
 public interface TheaterRepository extends JpaRepository<Theater, Long> {
 
     List<Theater> findByLocationId(Long id);
+    
+    Theater findByName(String name);
 }

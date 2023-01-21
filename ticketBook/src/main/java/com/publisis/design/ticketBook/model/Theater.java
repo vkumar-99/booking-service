@@ -17,5 +17,11 @@ public class Theater {
     private List<Show> shows;
     @ManyToOne
     private Location location;
-
+    
+    
+	public Theater(String name, Location location) {
+		super();
+		this.name = name;
+		this.location = location;
+	}
 }
